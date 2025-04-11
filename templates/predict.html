@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyGuard - Stock Prediction</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style_predict.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container cont">
+            <img src="../static/images/logo.png" alt="MoneyGuard Logo" class="logo">
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>  
+                <li><a href="#">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <h1>Stock Price Prediction</h1>
+            <h6 class="h21">Predict, Invest, Prosper, Repeat</h6>
+            <h5>Predicted Stock Prices for {{ stock_symbol }}</h5>
+
+            {% if error %}
+                <p style="color: red;">{{ error }}</p>
+            {% else %}
+                <h2>Next Day's Predicted Prices</h2>
+                <p><strong>Predicted Opening Price:</strong> {{ next_day_open }}</p>
+                <p><strong>Predicted Closing Price:</strong> {{ next_day_close }}</p>
+            {% endif %}
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 MoneyGuard. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

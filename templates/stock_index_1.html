@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyGuard - Stock Prediction</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style1.css">
+    <script src="/static/js/script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container cont">
+            <img src="../static/images/logo.png" alt="MoneyGuard Logo" class="logo">
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>  
+                <li><a href="#">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <h1>Stock Price Prediction</h1>
+            <h2 class="h21">Predict, Invest, Prosper, Repeat</h2>
+            <div class="form-container">
+                <form action="/predict" method="POST" class="item1">
+                    <h2>Predict Next Day's Stock Price</h2>
+                    <label for="symbol">Enter Stock Symbol:</label>
+                    <input type="text" id="symbol" name="symbol" required>
+                    <button type="submit">Predict</button>
+                </form>
+        
+                <form action="/today_price" method="POST" class="item2">
+                    <h2>Get Today's Stock Price</h2>
+                    <label for="symbol_today">Enter Stock Symbol:</label>
+                    <input type="text" id="symbol_today" name="symbol" required>
+                    <button type="submit">Get Today's Price</button>
+                </form>
+        
+                <form action="/historical" method="POST" class="item3">
+                    <h2>Get Historical Stock Data</h2>
+                    <label for="symbol_historical">Enter Stock Symbol:</label>
+                    <input type="text" id="symbol_historical" name="symbol" required>
+        
+                    <label for="start_date">Select Start Date:</label>
+                    <input type="date" id="start_date" name="start_date" required>
+        
+                    <label for="end_date">Select End Date:</label>
+                    <input type="date" id="end_date" name="end_date" required>
+        
+                    <button type="submit">Get Historical Data</button>
+                </form>
+            </div>
+         
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 MoneyGuard. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

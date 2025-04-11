@@ -1,0 +1,120 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff00ff90;
+    color: #282424;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+ 
+}
+
+.cont{
+    display: flex;
+
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #928e85a9;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    height: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: 400px;
+    margin-right: 100px;
+}
+
+.nav-links li {
+    padding: 10% 1% 10% 15%;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.5s;
+    font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+    background-color: #928e85;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+main h1 {
+   font-size: 2rem;
+}
+
+
+main p{
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.h21{
+    font-size: large;
+    margin-bottom: 2%;
+}
+
+
+h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 1%;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+h2 {
+    
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+strong {
+    color: #000000;
+
+}
+
+
+/* Footer */
+.footer {
+    background-color: #928e85a9;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
